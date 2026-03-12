@@ -12,7 +12,7 @@ This project is deployed and live on Render: [https://todo-notes-dbb0.onrender.c
 - Live hosting on Render
 
 ## Live Demo
-- **Frontend Testing UI (GitHub Pages):** `https://seizue.github.io/todoapi/docs/index.html`
+- **Frontend Testing UI (GitHub Pages):** `https://seizue.github.io/todoapi/`
 - **Base URL:** `https://todo-notes-dbb0.onrender.com/`
 - **Swagger UI:** `https://todo-notes-dbb0.onrender.com/swagger`
   ### Important Note for Frontend Testing (Free Hosting)
