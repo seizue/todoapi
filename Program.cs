@@ -44,7 +44,11 @@ app.UseCors("AllowAll");
 
 // Swagger
 app.UseSwagger();
-app.UseSwaggerUI();
+app.UseSwaggerUI(options =>
+{
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "TodoApi v1");
+    options.RoutePrefix = "api-docs";
+});
 
 // Authorization
 app.UseAuthorization();
@@ -54,12 +58,14 @@ app.MapControllers();
 // Custom landing page at "/"
 app.MapGet("/", (HttpContext context) =>
 {
-    var swaggerUrl = $"{context.Request.Scheme}://{context.Request.Host}/swagger";
+    var swaggerUrl = $"{context.Request.Scheme}://{context.Request.Host}/api-docs";
+    var docsUrl = $"{context.Request.Scheme}://{context.Request.Host}/docs/index.html";
 
     return Results.Text(
         $"""
         <h1>TodoAPI</h1>
         <p>See the <a href='{swaggerUrl}'>Swagger UI</a>.</p>
+        <p>Test the <a href='{docsUrl}'>Frontend</a>.</p>
     
         """,
         "text/html"
