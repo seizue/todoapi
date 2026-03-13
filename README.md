@@ -12,9 +12,8 @@ This project is deployed and live on Render: [https://todo-notes-dbb0.onrender.c
 - Live hosting on Render
 
 ## Live Demo
-- **Frontend Testing UI (GitHub Pages):** `https://seizue.github.io/todoapi/`
+- **Frontend Testing UI (GitHub Pages):** `https://seizue.github.io/todoapi/docs/index.html`
 - **Base URL:** `https://todo-notes-dbb0.onrender.com/`
-- **Swagger UI:** `https://todo-notes-dbb0.onrender.com/swagger`
   ### Important Note for Frontend Testing (Free Hosting)
   The backend API is hosted on Render (free tier).
   If inactive, the API may enter sleep mode and take 30–60 seconds to restart.
